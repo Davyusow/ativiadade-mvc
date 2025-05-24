@@ -8,9 +8,9 @@ public class View {
     Scanner ler = new Scanner(System.in);
     { //bloco de inicilização
         do {
-            System.out.println("-------------------------------------" +
-                    "\tLista de tarefas\n" +
-                    "-------------------------------------");
+            System.out.println("---------------------------------------" +
+                                "\n\t\t\tLista de tarefas\n" +
+                               "---------------------------------------");
             //get das tarefas pendentes
             System.out.println(" · Tarefas Pendentes: "); //get das tarefas criadas - feitas
             System.out.println(" · Tarefas Concluídas: "); //get das tarefas feitas
@@ -22,10 +22,15 @@ public class View {
                     "\n ⟶ Sua opção: ");
             opcao = ler.nextInt();
             switch (opcao){
-                case ADICIONAR:
+                case ADICIONAR: //adiciona uma task
                     break;
-                case EDITAR:
-                    
+                case EDITAR:    //pode trocar para outra coisa, mas por enquanto edita título e descrição de uma tarefa
+                    break;
+                case CONCLUIR:
+                    break;
+                case SAIR:
+                    System.out.println("\nAté logo!");
+                    break;
             }
 
         }while (opcao != SAIR);

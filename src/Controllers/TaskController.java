@@ -21,7 +21,16 @@ public class TaskController {
         return repository.listTasks();
     }
 
-    public void markAsDone(String title) {
-        //falta implementar
+    public void markAsDone(Long id) {
+        Task task = repository.getTaskById(id).orElseThrow(RuntimeException::new);
+        task.setStatus("done");
+    }
+
+    public List<Task> getDoneTasks() {
+        return repository.getDoneTasks();
+    }
+
+    public List<Task> getUndoneTasks() {
+        return repository.getUndoneTasks();
     }
 }

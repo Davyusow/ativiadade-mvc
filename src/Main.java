@@ -1,6 +1,7 @@
-package View;
+import View.View;
 
-public class teste {
+public class Main {
+
     public static void main(String[] args) {
         new View().start();
     }

@@ -1,7 +1,7 @@
 # Requisitos
 
 <p>Compreender a aplicação prática dos padrões de arquitetura DAO (Data Access Object) e MVC (Model-View-Controller) em Java.<br>
-Considere um sistema simples de gerenciamento de tarefas (To-Do List), que permite:<\p>
+Considere um sistema simples de gerenciamento de tarefas (To-Do List), que permite:<br>
 > - Cadastrar tarefas (com título, descrição e status);  
 > - Listar tarefas;  
 > - Marcar tarefas como concluídas.

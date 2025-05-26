@@ -27,4 +27,18 @@ public class TaskRepository implements TaskDAO {
 
         task.setStatus("done");
     }
+
+    public int tasksDone(String parameter){
+        int made = 0;
+        for(Task num : dados){
+            if(num.getStatus().equals("done")){
+                made++;
+            }
+        }
+        if(parameter.equals("done")){
+            return made;
+        }
+        int num = (dados.size()) - made;
+        return num;
+    }
 }

@@ -15,13 +15,15 @@ public class View {
 
     public void start(){ //bloco de inicilização
         do {
+            int num = repositorio.tasksDone("num");
+            int done = repositorio.tasksDone("done");
             System.out.println(
                 "--------------------------------" +
                 "\n\tLista de tarefas\n" +
                 "--------------------------------");
             //get das tarefas pendentes
-            System.out.println(" · Tarefas Pendentes: "); //get das tarefas criadas - feitas
-            System.out.println(" · Tarefas Concluídas: "); //get das tarefas feitas
+            System.out.println(" · Tarefas Pendentes: " + num); //get das tarefas criadas - feitas
+            System.out.println(" · Tarefas Concluídas: " + done); //get das tarefas feitas
             System.out.println(
                 "\n ⟶ [ 1 ] Para Adicionar uma nova tarefa" +
                 "\n ⟶ [ 2 ] Para LISTAR as tarefas" +

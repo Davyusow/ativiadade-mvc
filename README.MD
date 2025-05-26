@@ -1,7 +1,7 @@
 # Requisitos
 
->Compreender a aplicação prática dos padrões de arquitetura DAO (Data Access Object) e MVC (Model-View-Controller) em Java.
->Considere um sistema simples de gerenciamento de tarefas (To-Do List), que permite:
+<p>Compreender a aplicação prática dos padrões de arquitetura DAO (Data Access Object) e MVC (Model-View-Controller) em Java.<br>
+Considere um sistema simples de gerenciamento de tarefas (To-Do List), que permite:<\p>
 > - Cadastrar tarefas (com título, descrição e status);  
 > - Listar tarefas;  
 > - Marcar tarefas como concluídas.
@@ -19,7 +19,7 @@
 ## Resumo
 <p>Por meio do uso dos padrões DAO (Data Access Object) e MVC (Model-View-Controller), na arquitetura deste projeto, foi possível o tornar de certa forma mais organizado, visto que, é notória uma separação de responsabilidades, tornando o código mais fácil de entender e facilitando a manuntenção do mesmo. Essa divisão realizada pelo padrão MVC permite que alterações em uma camada não afetem diretamente as outras, o que favorece a flexibilidade e a escalabilidade do sistema.<br>
 Quanto o DAO, foi um modelo que se fez igualmente crucial, pois foi essencial para isolar a lógica de acesso ao banco de dados. Centralizando as operações do CRUD (Create-Read-Update-Delete), o que tornou possível a reutilização de código como também torna o sistema mais robusto a eventuais mudanças.<br>
-Deste modo, a combinação desses dois padrões trouxe maior clareza estrutural ao projeto, tornando-o mais modular, testável e preparado para evoluções futuras.
+Deste modo, a combinação desses dois padrões trouxe maior clareza estrutural ao projeto, tornando-o mais modular, testável e preparado para evoluções futuras.<\p>
 ---
 ## Diagrama de Classes 
 

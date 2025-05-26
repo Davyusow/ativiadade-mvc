@@ -1,5 +1,6 @@
 package View;
 
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 import Controllers.TaskController;
@@ -32,7 +33,12 @@ public class View {
                 "\n ⟶ [ 3 ] Para CONCLUIR uma tarefa " +
                 "\n ⟶ [ 0 ] Para SAIR\n");
                 System.out.print("Opção: ");
-            opcao = ler.nextInt();
+
+            try {
+                opcao = ler.nextInt();
+            }catch (InputMismatchException e){
+                System.out.println("O valor inserido precisa ser um número!");
+            }
 
             switch (opcao){
                 case ADICIONAR: //adiciona uma task
@@ -64,9 +70,17 @@ public class View {
                 case CONCLUIR:
                     System.out.println("Dígite o ID da tarefa para ser concluída : ");
                     ler.nextLine();
-                    var id = ler.nextLong();
-                    controlador.markAsDone(id);
+
+                    try{
+                        var id = ler.nextLong();
+                        controlador.markAsDone(id);
+                        System.out.println("O valor inserido precisa ser um número!");
                         System.out.println("Concluída com sucesso!");
+                    }catch (RuntimeException e){
+                        System.out.println("A tarefa não foi encontrada!");
+                        ler.nextLine();
+                    }
+
                     break;
                 case SAIR:
                     System.out.println("\nAté logo!");

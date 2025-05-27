@@ -25,7 +25,7 @@ Deste modo, a combinação desses dois padrões trouxe maior clareza estrutural 
 ---
 ## Diagrama de Classes 
 
-![alt text](<Captura de tela de 2025-05-26 14-44-16.png>)  
+![alt text](<UML.drawio.png>)  
  [_Diagrama de classes do código_](https://app.diagrams.net/?splash=0#G12dSaowZg8tLPew6c92YOc4NNV4Wk3co4#%7B%22pageId%22%3A%22RZpE8nyr-ppUinjQtbNc%22%7D "link para o draw.io")
  
 ---
